@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 var azure = require('azure-mobile-apps');
 var mobile = azure();
 
-mobile.tables.add('./table');
-mobile.api.add('./api','');
+mobile.tables.import('./tables');
+mobile.api.import('./api');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
