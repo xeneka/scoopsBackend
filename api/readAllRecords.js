@@ -30,5 +30,5 @@ var api =  {
 
 };
 
-api.get.access = 'anonymous';
+//api.get.access = 'anonymous';
 module.exports = api
