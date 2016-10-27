@@ -24,6 +24,8 @@ var api =  {
 
 
         req.azureMobile.data.execute(query).then(function(result){
+            console.log("Entron");
+            console.log(result);
             res.json(result)
         });
 
