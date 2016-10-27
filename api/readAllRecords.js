@@ -13,8 +13,8 @@ var api =  {
             return next()
         }
 
-        var context = req.azureMobile
-        //var user = context.user.id;
+        var context = req.azureMobile;
+        var user = context.user.id;
 
         var query = {
             sql:"select * from Autors"
