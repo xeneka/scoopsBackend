@@ -14,14 +14,14 @@ var api =  {
         }
 
         var context = req.azureMobile
-        console.log("+++",context,"****");
-       // var user = context.user.id;
+        var user = context.user.id;
 
         var query = {
             sql:"select * from Autors"
         }
 
-        req.azureMobile.execute(query).then(function(result){
+
+        req.azureMobile.data.execute(query).then(function(result){
             res.json(result)
         });
 
