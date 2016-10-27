@@ -18,7 +18,7 @@ var api =  {
 
         var query = {
             //sql:"select * from Autors"
-            sql:"insert into Autors values ('Juan', 'Perez')"
+            sql:"insert into Autors(name, secondNAme) values ('Juan', 'Perez')"
 
         }
 
