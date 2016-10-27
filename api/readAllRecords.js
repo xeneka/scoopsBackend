@@ -17,7 +17,9 @@ var api =  {
         //var user = context.user.id;
 
         var query = {
-            sql:"select * from Autors"
+            //sql:"select * from Autors"
+            sql:"insert into Autor values ('Juan', 'Perez)"
+
         }
 
 
