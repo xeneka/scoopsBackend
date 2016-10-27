@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(mobile);
 
-app.use('/api',require('./routes/v1/api.js'));
+
 
 
 app.use('/', routes);
