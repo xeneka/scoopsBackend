@@ -13,6 +13,8 @@ var mobile = azure({swagger:process.env.NODE_ENV !== 'production'});
 
 mobile.tables.import('./tables');
 mobile.api.import('./api');
+// Define a TodoItem table
+mobile.tables.add('TodoItem');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
