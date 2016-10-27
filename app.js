@@ -6,7 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var azure = require('azure-mobile-apps');
-var mobile = azure();
+var mobile = azure({swagger:process.env.NODE_ENV !== 'production'});
+
+
+
 
 mobile.tables.import('./tables');
 mobile.api.import('./api');
