@@ -19,7 +19,7 @@ var api =  {
         var query = {
 
 
-        sql: "insert into Autors(name) values=(@id)",
+        sql: "select * from  Autors where name = @id",
             parameters:[{id : 'hola'}]
 
 
