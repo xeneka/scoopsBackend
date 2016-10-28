@@ -18,17 +18,13 @@ var api =  {
 
         var query = {
 
-
-        sql: "select name from  Autors where name = 'Pepe'"
-
-
-
+        sql: "select name from  Autors where name = @name",parameters:[{name: 'Antonio'}]
 
         }
 
 
         req.azureMobile.data.execute(query).then(function(result){
-            console.log("Entro");
+
             res.json(result)
         });
 
