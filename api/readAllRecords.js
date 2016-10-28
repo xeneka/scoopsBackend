@@ -25,7 +25,8 @@ var api =  {
 
         req.azureMobile.data.execute(query).then(function(result){
 
-            res.json(result)
+            //res.json(result)
+            res.send(req.query);
         });
 
     }
