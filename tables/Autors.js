@@ -12,7 +12,8 @@ var table =azuremobile.table();
 
 table.columns = {
     "name":"string",
-    "secondName":"string"
+    "secondName":"string",
+    "tituloNoticia":"string"
 }
 
 // Definición de Trigger
@@ -23,7 +24,7 @@ table.insert(function(context){
 })
 
 
-/*table.read.access = 'anonymous';
-table.update.access = 'authenticated';
+table.read.access = 'anonymous';
+/*table.update.access = 'authenticated';
 table.insert.access = 'authenticated';
 table.delete.access = 'authenticated';*/
