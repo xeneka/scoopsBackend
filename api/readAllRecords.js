@@ -19,7 +19,7 @@ var api =  {
         var query = {
 
 
-        sql: "select name from  Autors where name = 'Antonio'"
+        sql: "select name from  Autors where name = 'Pepe'"
 
 
 
