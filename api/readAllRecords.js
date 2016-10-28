@@ -18,7 +18,7 @@ var api =  {
 
         var query = {
 
-        sql: "select name from  Autors where name = '@name'",parameters:[{name: 'antonio'}]
+        sql: "select name from  Autors where name = '@name'",parameters:[{name: antonio}]
 
         }
 
