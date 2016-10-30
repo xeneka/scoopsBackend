@@ -17,7 +17,7 @@ var api =  {
 
         var query = {
 
-            sql: "select * from  Autors where publicada=1 order by updatedAt DESC"
+            sql: "select * from  Autors where publicada=1 order by updatedAt ASC"
 
         }
         req.azureMobile.data.execute(query).then(function(result){
