@@ -1,7 +1,6 @@
 /**
- * Created by Antonio on 27/10/16.
+ * Created by Antonio on 30/10/16.
  */
-
 
 //'use strict';
 
@@ -18,9 +17,7 @@ var api =  {
 
         var query = {
 
-        sql: "select name from  Autors where name = '@name'",parameters:[{name: req.query.name}]
-
-        }
+            sql: "select * from  Autors where publicada=1 order by updateAt DESC",
 
 
         req.azureMobile.data.execute(query).then(function(result){
