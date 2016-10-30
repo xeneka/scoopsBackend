@@ -17,13 +17,13 @@ var api =  {
 
         var query = {
 
-            sql: "select * from  Autors where publicada=1 order by updatedAt DESC",
+            sql: "select * from  Autors where publicada=1 order by updatedAt DESC"
 
-
+        }
         req.azureMobile.data.execute(query).then(function(result){
 
-            //res.json(result)
-            res.send(result + req.query);
+            res.json(result)
+
         });
 
     }
