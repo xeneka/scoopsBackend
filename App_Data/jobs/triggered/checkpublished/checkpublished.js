@@ -6,7 +6,7 @@
 console.log("Actualización de noticias Publicadas")
 var sql = require('mssql');
 
-sql.connect("mssql://{adminscoop}:{-ana2008}@{abmscoopsserver}.database.windows.net:1433/{abmscoops}?encrypt=true")
+sql.connect("mssql://adminscoop:-ana2008@abmscoopsserver.database.windows.net:1433/abmscoops?encrypt=true")
     .then(function() {
 
         new sql.Request().query("UPDATE Autors SET visible = 1 where publicada=1")
