@@ -8,7 +8,7 @@ var sql = require('mssql');
 sql.connect("mssql://{adminscoop}:{-ana2008}@{misqlserver}.database.windows.net:1433/{abmscoops}?encrypt=true")
     .then(function() {
 
-        new sql.Request().query("UPDATE news SET published = 1")
+        new sql.Request().query("UPDATE news SET visible = 1 where publicada=1")
             .then(function(recordset) {
                 console.log("All news published");
             }).catch(function(err) {
