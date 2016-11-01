@@ -10,7 +10,7 @@ sql.connect("mssql://{adminscoop}:{-ana2008}@{misqlserver}.database.windows.net:
 
         new sql.Request().query("UPDATE Autors SET visible = 1 where publicada=1")
             .then(function(recordset) {
-                console.log("All news published");
+                console.log("All news published", recordset);
             }).catch(function(err) {
             console.error(err);
         });
